@@ -1,0 +1,858 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.home {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+.home .layer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+    margin-left: auto;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.75rem;
+    position: absolute;
+    top: 20px;
+    left: 110;
+}
+
+.nav-item {
+    position: relative;
+
+}
+
+.nav-item::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    transition: all 0.5s;
+}
+
+.nav-item:hover::after {
+    width: 60%;
+
+}
+
+.home .info {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 150px;
+    font-weight: 900;
+    font-size: 4.5rem;
+    color: #fff;
+    position: relative;
+}
+
+.home h1::after {
+    content: "";
+    color: white;
+    font-size: 2.5rem;
+    animation: word infinite 8s;
+    position: absolute;
+    top: 120%;
+    left: 40%;
+}
+
+@keyframes word {
+    0% {
+        content: "|";
+    }
+
+    1% {
+        content: "F|";
+    }
+
+    3% {
+        content: "Fr|";
+    }
+
+    5% {
+        content: "Fre|";
+    }
+
+    7% {
+        content: "Free|";
+    }
+
+    9% {
+        content: "Freel|";
+    }
+
+    11% {
+        content: "Freela|";
+    }
+
+    13% {
+        content: "Freelan|";
+    }
+
+    15% {
+        content: "Freelanc|";
+    }
+
+    17% {
+        content: "Freelance|";
+    }
+
+    19% {
+        content: "Freelancer|";
+    }
+
+    29% {
+        content: "Freelancer|";
+    }
+
+    30% {
+        content: "Freelance|";
+    }
+
+    31% {
+        content: "Freelanc|";
+    }
+
+    32% {
+        content: "Freelan|";
+    }
+
+    33% {
+        content: "Freela|";
+    }
+
+    34% {
+        content: "Freel|";
+    }
+
+    35% {
+        content: "Free|";
+    }
+
+    36% {
+        content: "Fre|";
+    }
+
+    37% {
+        content: "Fr|";
+    }
+
+    38% {
+        content: "F|";
+    }
+
+    39% {
+        content: "|";
+    }
+
+    40% {
+        content: "D|";
+    }
+
+    42% {
+        content: "De|";
+    }
+
+    44% {
+        content: "Des|";
+    }
+
+    46% {
+        content: "Desi|";
+    }
+
+    48% {
+        content: "Desig|";
+    }
+
+    50% {
+        content: "Design|";
+    }
+
+    52% {
+        content: "Designe|";
+    }
+
+    54% {
+        content: "Designer|";
+    }
+
+    64% {
+        content: "Designer|";
+    }
+
+    65% {
+        content: "Designe|";
+    }
+
+    66% {
+        content: "Design|";
+    }
+
+    67% {
+        content: "Desig|";
+    }
+
+    68% {
+        content: "Desi|";
+    }
+
+    69% {
+        content: "Des|";
+    }
+
+    70% {
+        content: "De|";
+    }
+
+    71% {
+        content: "De|";
+    }
+
+    72% {
+        content: "Dev|";
+    }
+
+    73% {
+        content: "Deve|";
+    }
+
+    74% {
+        content: "Devel|";
+    }
+
+    75% {
+        content: "Develo|";
+    }
+
+    76% {
+        content: "Develop|";
+    }
+
+    77% {
+        content: "Develope|";
+    }
+
+    78% {
+        content: "Developer|";
+    }
+
+    88% {
+        content: "Developer|";
+    }
+
+    89% {
+        content: "Develope|";
+    }
+
+    90% {
+        content: "Develop|";
+    }
+
+    91% {
+        content: "Develo|";
+    }
+
+    93% {
+        content: "Devel|";
+    }
+
+    95% {
+        content: "Deve|";
+    }
+
+    96% {
+        content: "Dev|";
+    }
+
+    98% {
+        content: "De|";
+    }
+
+    99% {
+        content: "D|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+.about {
+
+    width: 100%;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.about .info {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    margin-top: 70px;
+    box-shadow: 1px 2px 2px #555;
+}
+
+.about .info .inner {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 5%;
+}
+
+
+.about .info .top p {
+    font-size: 1.1rem;
+    color: #1e1e1e;
+    font-weight: 600;
+}
+
+.about .info .top .one::after {
+    content: "Morgan Freeman";
+    font-size: 1rem;
+    color: #4e4e4e;
+    font-weight: 400;
+    padding-left: 2%;
+}
+
+.about .info .top .two::after {
+    content: "Full stack developer";
+    font-size: 1rem;
+    color: #4e4e4e;
+    font-weight: 400;
+    padding-left: 2%;
+}
+
+.about .info .top .three::after {
+    content: "contact@example.com";
+    font-size: 1rem;
+    color: #4e4e4e;
+    font-weight: 400;
+    padding-left: 2%;
+}
+
+.about .info .top .four::after {
+    content: "(617) 557-0089";
+    font-size: 1rem;
+    color: #4e4e4e;
+    font-weight: 400;
+    padding-left: 2%;
+}
+
+.about .info .left .bottom {
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+
+.about .info .p1 {
+    font-size: 1.1rem;
+    color: #1e1e1e;
+    font-weight: 600;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.about .info .right h2 {
+    color: #1e1e1e;
+    font-size: 2rem;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.about .info .right h2::after {
+    content: "";
+    background-color: #0078ff;
+    height: 3px;
+    width: 20%;
+    position: absolute;
+    top: 115%;
+    left: 0;
+
+}
+
+.about .info .right p {
+    color: #4e4e4e;
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+.service {
+    background-color: #f5f5f5;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.service h2 {
+    font-size: 3rem;
+    color: #1e1e1e;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.service .line {
+    font-size: 1rem;
+    color: #4e4e4e;
+    position: relative;
+}
+
+.service .line::after {
+    content: "";
+    background-color: #0078ff;
+    height: 5px;
+    width: 3%;
+    position: absolute;
+    top: 170%;
+    left: 48%;
+}
+
+.op {
+    margin: auto;
+}
+
+.service .info h2 {
+    color: #1e1e1e;
+    font-size: 1.4rem;
+}
+
+.service .info p {
+    color: #4e4e4e;
+    font-size: 1rem;
+}
+
+.service .bord {
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #333;
+}
+
+.service .icon {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 25px;
+    text-align: center;
+    border: 10px solid #0078ff;
+    transition: all 0.5s;
+}
+
+.service .hov:hover .icon {
+    color: white;
+    background-color: #0078ff;
+    border: 10px solid #cde1f8;
+
+}
+
+.count {
+    background-image: url(../images/post-3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400PX;
+    position: relative;
+}
+
+.count .layer {
+    background-color: rgba(0, 120, 225, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.count .coun {
+    color: white;
+    text-align: center;
+}
+
+.count .icon {
+    height: 80px;
+    width: 80px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    border: 10px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+}
+
+.count .p1 {
+    font-size: 2rem;
+}
+
+.portfoilo {
+    background-color: #f5f5f5;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.portfoilo h2 {
+    font-size: 3rem;
+    color: #1e1e1e;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.portfoilo .line {
+    font-size: 1rem;
+    color: #4e4e4e;
+    position: relative;
+}
+
+.portfoilo .line::after {
+    content: "";
+    background-color: #0078ff;
+    height: 5px;
+    width: 3%;
+    position: absolute;
+    top: 170%;
+    left: 48%;
+}
+
+.portfoilo .space {
+    margin-top: 5%;
+}
+
+.portfoilo .image {
+    overflow: hidden;
+}
+
+.portfoilo .card-img-top {
+    transition: all 1s;
+}
+
+.portfoilo .card:hover .card-img-top {
+    transform: scale(1.3);
+}
+
+.fa-plus {
+    text-align: center;
+    color: #0078ff;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border: 2px solid #0078ff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.portfoilo .card h5 {
+    color: #1e1e1e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.portfoilo .card p {
+    color: #4e4e4e;
+    font-size: 0.8rem;
+}
+
+.portfoilo .card .diff {
+    color: #0078ff;
+    font-size: 0.8rem;
+}
+
+.work {
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 600PX;
+    position: relative;
+}
+
+.work .layer {
+    background-color: rgba(0, 120, 225, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.carousel.slide {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carousel h2 {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.carousel p {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.blog {
+    background-color: #f5f5f5;
+    width: 100%;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.blog h2 {
+    font-size: 3rem;
+    color: #1e1e1e;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.blog .line {
+    font-size: 1rem;
+    color: #4e4e4e;
+    position: relative;
+}
+
+.blog .line::after {
+    content: "";
+    background-color: #0078ff;
+    height: 5px;
+    width: 3%;
+    position: absolute;
+    top: 170%;
+    left: 48%;
+}
+
+.bg-col {
+    background-color: #0078ff;
+}
+
+.blog .bot {
+    padding: 2px 15px;
+    color: #fff;
+}
+.blog .card{
+    padding: 0;
+}
+.blog .card-body a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #1e1e1e;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+
+.blog .card-body a:hover {
+    color: #0078ff;
+}
+
+.blog .card-foot {
+    text-align: start;
+    background-color: #f7f7f7;
+    width: 100%;
+    border-top: 1px solid #d2d2d2;
+    padding-top: 10px;
+
+}
+
+.blog .card-foot .image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.blog .card-foot a {
+    font-size: 1rem;
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+.blog .card-foot i {
+    margin-left: 50px;
+}
+
+.blog .card-foot i::after {
+    content: "10 min";
+    color: #4e4e4e;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 700PX;
+    position: relative;
+    box-shadow: 5px 5px 4px rgb(25, 99, 179);
+}
+
+.contact .layer {
+    background-color: rgba(0, 120, 225, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact .body {
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+}
+
+.contact .body h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1e1e1e;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contact .body h2::after {
+    content: "";
+    background-color: #0078ff;
+    height: 4px;
+    width: 40%;
+    position: absolute;
+    top: 120%;
+    left: 0em;
+}
+.contact .body .form1{
+    margin-bottom: 20px;
+}
+.contact .body .top{
+    padding: 10px 24px;
+    font-size: 1.2rem;
+    background-color: #0078ff;
+    border: 5px solid #0078ff;
+    border-radius: 35px;
+    margin-left: 150px;
+    color: #fff;
+    transition: all 0.3s;
+    margin-bottom: 70px;
+}
+.contact .body .top:hover{
+    color: white;
+    background-color: #0078ff;
+    border: 5px solid #cde1f8;
+}
+.contact .body p{
+    font-size: 1.25rem;
+    color: #4e4e4e;
+}
+
+.contact .fa-location-dot{
+    color: #0078ff;
+    padding: 5px;
+}
+.contact .fa-location-dot::after{
+    content: "329 WASHINGTON ST BOSTON, MA 02108";
+    font-size: 1rem;
+    color: #4e4e4e;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.contact .fa-mobile{
+    color: #0078ff;
+    padding: 5px;
+}
+.contact .fa-mobile::after{
+    content: "(617) 557-0089";
+    font-size: 1rem;
+    color: #4e4e4e;
+    font-weight: 400;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.contact .fa-envelope{
+    color: #0078ff;
+    padding: 5px;
+}
+.contact .fa-envelope::after{
+    content: " contact@example.com";
+    font-size: 1rem;
+    color: #4e4e4e;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.contact .fa-brands{
+    color: #000;
+    background-color: #fff;
+}
+.contact .bot{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 4px solid #0078ff;
+    transition: all 0.5s;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.contact .bot:hover{
+    color: white;
+    background-color: #0078ff;
+    border: 5px solid #cde1f8;
+}
+
+.end{
+    background-color: #0062d3;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+.end .one{
+    font-weight: 900;
+}
+.end button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}

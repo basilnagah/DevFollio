@@ -1,0 +1,44 @@
+@media screen and (max-width:979px) and (min-width:768px) {
+ html{
+    font-size: 14px;
+ }
+ .count{
+    height: 500px;
+  }
+  .portfoilo{
+    width: 18rem;
+  }
+  .blog .card-foot i{
+    margin-left: 0px;
+}
+}
+
+@media screen and (max-width:767px) and (min-width:541px) {
+    html{
+        font-size: 12px;
+     }
+     .count{
+        height: 940px;
+      }
+      .blog .card-foot i{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:540px) {
+  html{
+    font-size: 12px;
+ }
+ .home .info h1{
+  font-size: 3.5rem;
+ }
+  .count{
+    height: 940px;
+  }
+  .blog .card-foot i{
+    margin-left: 0px;
+}
+.contact{
+  height: 500px;
+}
+}
